@@ -1,0 +1,122 @@
+#root {
+  max-width: 100%;;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+#mainContainer{
+        display: flex;
+    width: 25%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px -2px 20px 0px #000;
+    text-align: left;
+}
+#mainContainer img{
+  width: 100%;
+    border-radius: 20px;
+    filter: grayscale(1);
+}
+#mainContainer:hover img{
+    filter: grayscale(0);
+}
+h2{
+  margin-bottom: 0;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom p{
+  font-weight: 700;
+  font-size: 18px;
+}
+.mainCards{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+ul{
+  padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Event Prpagation CSS */
+.main-div{
+  width: 900px;
+    padding: 50px;
+    background: #ececff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.g-div{
+  background-color: brown;
+  width: 800px;
+    padding: 50px;
+}
+.p-div{
+  background-color:tomato;
+  width: 600px;
+    padding: 50px;
+}
+.c-div{
+  background-color:teal;
+  width: 300px;
+    padding: 50px;
+  color: #fff;
+}
+/* END Event Prpagation CSS */
+
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

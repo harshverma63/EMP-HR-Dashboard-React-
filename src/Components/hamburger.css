@@ -1,0 +1,121 @@
+.hamburger {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    position: absolute;
+    left: 8px;
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Top line */
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  
+  /* Middle line */
+  .hamburger span:nth-child(2) {
+    top: 18px;
+  }
+  
+  /* Bottom line */
+  .hamburger span:nth-child(3) {
+    top: 26px;
+  }
+  
+  /* ACTIVE (Cross Animation) */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 18px;
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 18px;
+  }
+
+
+  /* SIDE BAR */
+.sideMenuContainer{
+  position: absolute;
+  width: 20%;
+  right: 0px;
+  height: auto;
+  z-index: 999;
+  padding: 30px;
+  background: rgb(14 22 39 / 59%);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-card);
+  transition: 0.3s;
+  animation: cardReveal 0.6s var(--ease) forwards;
+}
+/* .sideMenuContainer2{
+  position: fixed;
+    width: 20%;
+    right: 40px;
+    height: auto;
+    z-index: 999;
+    padding: 30px;
+    background: rgb(14 22 39 / 59%);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-card);
+    transition:  0.3s;
+    transform: translateX(0px);
+} */
+.sideMenuContainer ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.sideMenuContainer figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s var(--ease);
+}
+.sideMenuContainer li button{
+  font-size: 16px;
+    padding: 1rem 4.5rem;
+
+}
+.sideMenuContainer p{
+    font-family: 'DM Sans';
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary) !important;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    text-align: center;
+}
+.sideMenuContainer p em{
+  color: var(--gold);
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
