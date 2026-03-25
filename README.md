@@ -1,4 +1,5 @@
 🚀 Employee & HR Dashboard (React v-19)
+Live Demo: https://your-vercel-link.vercel.app
 
 A role-based Employee & HR Management Dashboard built with React, demonstrating authentication logic, state management, and dynamic UI rendering using real-world data scenarios. A practical React project showcasing core frontend skills, problem-solving, and real-world application structure.
 
